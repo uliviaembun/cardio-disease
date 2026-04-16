@@ -1,11 +1,11 @@
 # Layer 1: Data Mentah dari Kaggle
 raw_cardio_data:
-  type: pandas.CSVDataSet
+  type: pandas.CSVDataset   # <-- Ubah huruf S menjadi kecil (Dataset, bukan DataSet)
   filepath: data/01_raw/cardio_train.csv
   load_args:
     sep: ";"
 
 # Layer 2: Hasil pemrosesan awal (Pre-processing)
 preprocessed_cardio_data:
-  type: pandas.CSVDataSet
+  type: pandas.CSVDataset   # <-- Ubah huruf S menjadi kecil di sini juga
   filepath: data/02_intermediate/preprocessed_cardio.csv
